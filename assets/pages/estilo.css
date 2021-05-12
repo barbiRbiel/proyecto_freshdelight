@@ -1,0 +1,1002 @@
+/*general*/
+    body{
+        overflow-x: hidden;
+    }
+    /*body background*/
+    #body-container{
+        width: 100%;
+        height: 100vh;
+        background: url(../img/background2.png) center center no-repeat;
+        background-size: cover;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    /* -- body background - DESKTOP -- */
+    @media screen and (min-width: 1024px){
+        #body-container{
+            width: 100%;
+            height: 100vh;
+            background: url(../img/background.png) center center no-repeat;
+            background-size: cover;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+    }
+
+/* HOME - MOBILE */
+    /*HEADER - NAVBAR*/
+    .header__logo{
+        width: 80px;
+    }
+    .header {min-height: 10px;}
+    .header .navbar {background-color: transparent !important;}
+    .header__navbar{
+        font-family:'Montserrat', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px black;
+    }
+    /*PREVIEW - PRODUCTS mobile*/
+    .cloud-text {
+        -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;	
+        background-image: url(../img/titlebc.png);
+        background-size: auto;
+        background-attachment: unset;
+        background-position: 0%;
+        animation: clouds-moving infinite 25s;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+        animation-timing-function: linear;
+    }
+    @keyframes clouds-moving {
+        0% {
+            background-position: 0%;	
+        }
+        50% {
+            background-position: 100%;	
+        }
+        100% {
+            background-position: 0%;
+        }
+    }
+    .attribute {font-size: 26px;text-align: center;}
+    .preview__title{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+        font-size: 36px;
+        font-weight: bolder;
+    }
+    .preview__subtitle{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 3vh;
+        margin-right: 1vh;
+        margin-bottom: 3vh;
+        margin-left: 1vh;
+        font-weight: bolder;
+    }
+    .preview__slogan{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 15px;
+        margin-top: 3vh;
+        margin-right: 3vh;
+        margin-left: 3vh;
+        text-shadow: 1px 1px 1px black;
+    }
+    .preview__btn{
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 5vh;
+        margin-bottom: 8vh;
+        margin-left: 6vh;
+        color: #1D7151;
+        font-weight: bold;
+        width: 250px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+    }
+    .grid > article {
+        border: 1px solid white;
+        box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3);}
+    .grid > article:hover {
+        border: 2px solid #A5CF61;
+        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.3);}
+    .grid > article img {
+        max-width: 100%; transition: 1s;}
+    .grid .text {
+        padding: 20px;
+        text-align: center;}
+    .grid .text h3 {
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-weight: bold;
+    }
+    .grid .text p {
+        font-size: 0.9rem;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .grid .text p a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 1px 1px black;
+        }
+    .preview__button{
+        width:20vh;
+    }
+    .preview__button:hover{
+        width:23vh;
+        font-size: 18px;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    }
+    /*testimonios mobile*/
+    .testimonios__title{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        margin-top: 11vh;
+        margin-bottom: 7vh;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .testimonios__clientes{
+        width: 0px;
+    }
+    .testimonios__nombre{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.822);
+        color: #f8ed6d;
+    }
+    .testimonios__frase{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        text-shadow: 1px 1px 2px black;
+        font-style: italic;
+        color:white;
+    }
+    /* FOOTER */
+    .footer__nav{
+        font-size: 17px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px black;
+    }
+    .footer__parrafo{
+        color: white;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-right: 5vh;
+        margin-left: 5vh;
+        text-shadow: 1px 1px 1px black;
+    }
+    .footer__icon--media{
+        margin-left: 11vh;
+    }
+    .footer__icon--social{
+        width: 35px;
+    }
+    .footer__copyright{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+    }
+
+/* ------------------------ HOME ---- TABLET -----------------------*/
+@media screen and (min-width:768px) and (max-width: 1024px) {
+/*HEADER - NAVBAR*/
+    .header__logo{
+        width: 100px;
+    }
+    .header {
+        min-height: 1vh;
+    }
+/*PREVIEW - PRODUCTS*/
+    .cloud-text {animation: clouds-moving infinite 10s;}
+    .attribute {font-size: 80px;}
+    .preview__title{font-size: 77px;}
+    .preview__subtitle{
+        font-size: 38px;
+        margin-bottom: 5vh;
+        font-weight: bold;
+    }
+    .preview__slogan{
+        font-size: 25px;
+        margin-top: 3vh;
+        margin-right: 4vh;
+        margin-left: 4vh;
+    }
+    .preview__btn{
+        font-size: 19px;
+        margin-top: 6vh;
+        margin-bottom: 9vh;
+        margin-left: 19vh;
+        width: 300px;
+    }
+/*testimonios*/
+    .testimonios__title{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-size: 50px;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+    .testimonios__clientes{
+        width: 124px;
+    }
+    .testimonios__nombre{
+        font-size: 23px;
+        margin-bottom: 2vh;
+    }
+    .testimonios__frase{
+        font-size: 17px;
+        margin-bottom: 3vh;
+    }
+/* FOOTER */
+    .footer__nav{
+        font-size: 20px;
+        
+    }
+    .footer__parrafo{
+        font-size: 20px;
+        margin-right: 5vh;
+        margin-left: 5vh;
+    }
+    .footer__icon--media{
+        margin-left: 24vh;
+        margin-top: 5vh;
+    }
+    .footer__icon--social{
+        width: 40px;
+    }
+    .footer__copyright{
+        font-size: 18px;
+    }
+}
+/* ------------------------ HOME ---- DESKTOP -----------------------*/
+@media screen and (min-width:1024px) {
+/*HEADER - NAVBAR*/
+        .header__logo{
+            width: 105px;
+            margin-left: 5vh;
+        }
+        .header__navbar{
+            padding-left: 12vh;
+            transition: 1s;
+        }
+        .header__navbar:hover{
+            font-size: 23px;
+            color: #ffe900;
+            font-weight: bolder;
+        }
+        .header {
+            min-height: 1vh;
+        }
+/*PREVIEW - PRODUCTS*/
+        .cloud-text {animation: clouds-moving infinite 30s;}
+        .attribute {font-size: 0px;}
+        .preview__title{
+            font-size: 80px;
+            margin-top: 8vh;
+            margin-bottom: 5vh;
+        }
+        .preview__subtitle{
+            font-size: 50px;
+            margin-bottom: 5vh;
+            font-weight: bold;
+        }
+        .preview__slogan{
+            font-size: 32px;
+            margin-top: 8vh;
+            margin-right: 4vh;
+            margin-left: 4vh;
+        }
+        .preview__btn{
+            font-size: 22px;
+            margin-top: 6vh;
+            margin-bottom: 20vh;
+            margin-left: 40vh;
+            width: 400px;
+        }
+/*testimonios*/
+        .testimonios__title{
+            margin-top: 15vh;
+            margin-bottom: 0vh;
+            font-size: 55px;
+        }
+        .testimonios__clientes{
+            width: 220px;
+            margin-top: 2vh;
+            margin-bottom: 3vh;
+        }
+        .testimonios__nombre{
+            font-size: 30px;
+            margin-bottom: 5vh;
+        }
+        .testimonios__frase{
+            font-size: 25px;
+            margin-bottom: 15vh;
+        }
+/* FOOTER */
+        .footer__nav{
+            font-size: 22px;
+        }
+        .footer__parrafo{
+            font-size: 20px;
+            margin-right: 5vh;
+            margin-left: 5vh;
+        }
+        .footer__icon--media{
+            margin-left: 52vh;
+            margin-top: 5vh;
+        }
+        .footer__icon--social{
+            width: 35px;
+        }
+        .footer__copyright{
+            font-size: 18px;
+        }
+}
+/* ------------------------ HOME ---- DESKTOP -pantalla más grande-----------------------*/
+@media screen and (min-width:1750px) {
+    .header__logo{
+        width: 105px;
+        margin-left: 5vh;
+    }
+    .header__navbar{
+        padding-left: 18vh;
+        transition: 1s;
+    }
+    .preview__btn{
+        font-size: 22px;
+        margin-top: 6vh;
+        margin-bottom: 20vh;
+        margin-left: 35vh;
+        padding-left: 0vh;
+        width: 500px;
+    }
+}
+
+/* NOSOTROS - mobile*/
+    .nosotros__title{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-size: 50px;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+    .nosotros__parrafo{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: justify;
+        margin-right: 3vh;
+        margin-left: 3vh;
+        font-size: 15px;
+        text-shadow: 5px 1px 3px black;
+        margin-top: 2vh;
+    }
+    .nosotros__resaltado{
+        color: #f8ed6d;
+    }
+    .culinario__title{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-size: 50px;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+    .culinarios__parrafo{
+        margin-top: 2vh;
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-align: center;
+        margin-right: 3vh;
+        margin-left: 2vh;
+        font-size: 15px;
+        text-shadow: 1px 1px 1px black;
+    }
+/* ------------------------ NOSOTROS ---- TABLET -----------------------*/
+@media screen and (min-width:768px) and (max-width: 1024px) {
+        .nosotros__title{
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-size: 28px;
+        }
+        .nosotros__parrafo{
+            margin-top: 2vh;
+            margin-right: 4vh;
+            margin-left: 2vh;
+            font-size: 18px;
+        }
+        .culinarios__title{
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-size: 28px;
+        }
+        .culinarios__parrafo{
+            margin-top: 2vh;
+            margin-right: 4vh;
+            margin-bottom: 2vh;
+            margin-left: 2vh;
+            font-size: 18px;
+            text-align: justify;
+        }
+}
+/* -- NOSOTROS - DESKTOP -- */
+@media screen and (min-width: 1024px){
+        .nosotros__title{
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-size: 45px;
+        }
+        .nosotros__parrafo{
+            margin-top: 2vh;
+            margin-right: 6vh;
+            margin-left: 3vh;
+            font-size: 23px;
+        }
+        .culinarios__title{
+            margin-top: 5vh;
+            margin-bottom: 2vh;
+            font-size: 35px;
+        }
+        .culinarios__parrafo{
+            margin-top: 2vh;
+            margin-right: 6vh;
+            margin-bottom: 8vh;
+            margin-left: 3vh;
+            font-size: 23px;
+            text-align: justify;
+        }
+}
+
+/*PRODUCTOS mobile*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-top: 5vh;
+}
+.price {
+    color: grey;
+    font-size: 22px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #046865;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card button:hover {
+    opacity: 0.7;
+}
+.productos__img{
+    height: 411px;
+}
+.productos__img2{
+    height: 441px;
+}
+.productos__title{
+    font-size: 25px;
+    font-family: 'Poiret One', cursive;
+    color: #e53d00;
+}
+.productos__stock{
+    margin-top: 5vh;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: #046865;
+}
+.productos__edition{
+    margin-top: 5vh;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+    color: #e53d00;
+}
+/* ------------------------ PRODUCTOS ---- TABLET -----------------------*/
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .card {
+        max-width: 300px;
+        margin-top: 5vh;
+        margin-right: 5vh;
+        margin: 5vh;
+    }
+    .price {
+        font-size: 22px;
+        font-size: 18px;
+    }
+    .card button {
+        padding: 12px;
+        width: 100%;
+        font-size: 18px;
+    }
+    .card button:hover {
+        opacity: 0.7;
+    }
+    .productos__img{
+        height: 450px;
+    }
+    .productos__img2{
+        height: 441px;
+    }
+    .productos__title{
+        font-size: 25px;
+    }
+    .productos__stock{
+        margin-top: 5vh;
+        font-size: 28px;
+    }
+    .productos__edition{
+        margin-top: 5vh;
+        font-size: 35px;
+    }
+}
+/* -- PRODUCTOS - DESKTOP -- */
+@media screen and (min-width: 1024px){
+    .card {
+        margin-top: 5vh;
+        margin-left: 26vh;
+    }
+    .price {
+        font-size: 22px;
+        font-size: 18px;
+    }
+    .card button {
+        padding: 12px;
+        width: 100%;
+        font-size: 22px;
+    }
+    .card button:hover {
+        opacity: 0.7;
+    }
+    .productos__img{
+        height: 450px;
+    }
+    .productos__img2{
+        height: 441px;
+    }
+    .productos__title{
+        font-size: 28px;
+    }
+    .productos__stock{
+        margin-top: 5vh;
+        text-align: center;
+        font-size: 35px;
+    }
+    .productos__edition{
+        margin-top: 5vh;
+        font-size: 40px;
+    }
+}
+
+/*EVENTOS - MOBILE*/
+    .eventos__title{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        font-size: 50px;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+    .eventos__info{
+        font-family: 'Poiret One', cursive;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 6px black;
+    }
+    .eventos__container {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 70vh;
+    }
+    .box {
+        flex: 1;
+        overflow: hidden;
+        transition: .5s;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+    }
+    .box > img {
+        width: 200%;
+        height: calc(100% - 10vh);
+        object-fit: cover; 
+        transition: .25s;
+    }
+    .box > span {
+        display: block;
+        text-align: center;
+        height: 10vh;
+        line-height: 2.6;
+        background-color: rgba(255, 255, 255, 0.096);
+    }
+    .box:hover { flex: 1 1 50%; }
+    .box:hover > img {
+        width: 100%;
+        height: 100%;
+    }
+    .eventos__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(200px, 0.8fr));
+        grid-gap: 10px;
+        align-items: stretch;
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+        background-color: rgba(255, 255, 255, 0.096);
+    }
+    .eventos__grid > article {
+        border: 1px solid rgba(255, 255, 255, 0.534);
+        box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3);}
+    .eventos__grid > article:hover {
+        background-color:rgba(0, 0, 0, 0.068);}
+    .eventos__grid .text {
+        padding: 20px;
+        text-align: center;}
+    .eventos__grid .eventos__text h3 {
+        font-family: 'Poiret One', cursive;
+        color: white;
+        font-size: 20px;
+        margin-right: 5vh;
+        margin-left: 2vh;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        text-shadow: 1px 1px 1px black;
+    }
+    .eventos__grid .eventos__text h4{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        font-size: 15px;
+        margin-right: 5vh;
+        margin-left: 2vh;
+        text-shadow: 1px 1px 1px black;
+    }
+    .eventos__grid .eventos__button{
+        margin-bottom: 10vh;
+        margin-left: 16vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1D7151;
+    }
+    .promocion__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 10px;
+        align-items: stretch;
+        margin-top: 8vh;
+        margin-bottom: 1vh;
+        background-image: url(../img/promocion.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .promocion__grid > article {
+        border: 1px solid rgba(255, 255, 255, 0.534);
+        box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3);}
+    .promocion__grid > article:hover {
+        background-color:rgba(0, 0, 0, 0.116);}
+    .promocion__grid .promocion__text {
+        padding: 20px;
+        text-align: center;}
+    .promocion__grid .promocion__text h3 {
+        font-family: 'Poiret One', cursive;
+        color:white;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.61);
+        font-weight: bold;
+        margin-bottom: 10vh;
+    }
+    .promocion__grid .promocion__button{
+        margin-bottom: 2vh;
+        margin-left: 17vh;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #1D7151;
+    }
+    .footerEvento__icon--media{
+        margin-left: 11vh;
+    }
+    /* ------------------------ EVENTOS ---- TABLET -----------------------*/
+    @media screen and (min-width:768px) and (max-width: 1024px) {
+        .eventos__title{
+            font-size: 55px;
+        }
+        .eventos__info{
+            font-size: 22px;
+            text-shadow: 1px 1px 1px black;
+        }
+        .eventos__container {
+            height: 80vh;
+        }
+        .eventos__grid {
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(200px, 0.8fr));
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+        .eventos__grid .eventos__text h3 {
+            font-size: 25px;
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+        }
+        .eventos__grid .eventos__text h4{
+            font-size: 18px;
+        }
+        .eventos__grid .eventos__button{
+            margin-bottom: 10vh;
+            margin-left: 49vh;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #1D7151;
+        }
+        .promocion__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+            margin-top: 8vh;
+            margin-bottom: 8vh;
+        }
+        .promocion__grid .promocion__text h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            margin-top: 5vh;
+        }
+        .promocion__grid .promocion__label{
+            margin-top: 5vh;
+            margin-left: 7vh;
+        }
+        .promocion__grid .promocion__button{
+            font-size: 18px;
+            margin-top: 7vh;
+            margin-left: 7vh;
+        }
+        .footerEvento__icon--media{
+            margin-left: 24vh;
+            margin-top: 5vh;
+        }
+    }
+    /* ------------------ EVENTOS - DESKTOP ---------------------- */
+    @media screen and (min-width: 1024px){
+        .eventos__title{
+            font-size: 80px;
+        }
+        .eventos__info{
+            font-size: 21px;
+            text-shadow: 1px 1px 1px black;
+        }
+        .eventos__container {
+            height: 100vh;
+        }
+        .eventos__grid {
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(250px, 0.8fr));
+            margin-top: 15vh;
+            margin-bottom: 15vh;
+        }
+        .eventos__grid .eventos__text h3 {
+            font-size: 28px;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+        }
+        .eventos__grid .eventos__text h4{
+            font-size: 20px;
+        }
+        .eventos__grid .eventos__button{
+            margin-top: 3vh;
+            margin-left: 45vh;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 1px 1px 2px white;
+            font-size: 20px;
+            font-weight: bold;
+            color: #1D7151;
+            width: 300px;
+        }
+        /*-*/
+        .promocion__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            grid-template-rows: repeat(auto-fill, minmax(700px, 1fr));
+            margin-top: 8vh;
+            margin-bottom: 8vh;
+        }
+        .promocion__grid .promocion__text h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            margin-top: 5vh;
+            margin-right: 5vh;
+            margin-left:9vh;
+        }
+        .promocion__grid .promocion__label{
+            margin-top: 35vh;
+            margin-left: 17vh;
+        }
+        .promocion__grid .promocion__button{
+            font-size: 25px;
+            margin-top: 36vh;
+            margin-left: 7vh;
+        }
+        /* FOOTER */
+        .footerEvento__icon--media{
+            margin-left: 51vh;
+            margin-top: 5vh;
+        }
+    }
+
+    /* CONTACTO - MOBILE*/
+    .container__titulo{
+        font-family: 'Cinzel Decorative', cursive;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        font-size: 35px;
+        margin-right: 2vh;
+        margin-left: 2vh;
+    }
+    .container--font{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px black;
+    }
+    .container__button{
+    font-size: 12px;
+    width: 400px;
+    }
+    .container__titulo--individual{
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+    }
+    .form__container{
+        width: 80%;
+        margin-left: 3vh;
+    }
+    /* FOOTER */
+    .footer__contacto--nav{
+        font-size: 17px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px black;
+        margin-right: 7vh;
+        margin-left: 1vh;
+    }
+    .footer__contacto--parrafo{
+        color: white;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin-right: 8vh;
+        margin-left: 1vh;
+        text-shadow: 1px 1px 1px black;
+    }
+    .footerContacto__icon--media{
+        margin-left: 18vh;
+    }
+    .footer__contacto--copyright{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        margin-right: 7vh;
+        margin-left: 1vh;
+    }
+    /* -- CONTACTO - TABLET -- */
+    @media screen and (min-width:768px) and (max-width: 1024px) {
+        .container__titulo{
+            font-size: 55px;
+        }
+        .container--font{
+        font-size: 19px;
+        }
+        .container__button{
+        font-size: 20px;
+        width: 768px;
+        }
+        .form__container{
+            width: 100%;
+            margin-left: 0vh;
+        }
+        /* FOOTER */
+        .footer__contacto--nav{
+            font-size: 20px;
+            margin-left: 1vh;
+        }
+        .footer__contacto--parrafo{
+            font-size: 18px;
+            margin-left: 8vh;
+        }
+        .footerContacto__icon--media{
+            margin-left: 31vh;
+            margin-top: 5vh;
+        }
+        .footer__contacto--copyright{
+            font-size: 18px;
+            margin-left: 10vh;
+        }
+    }
+    /* -- CONTACTO - DESKTOP -- */
+    @media screen and (min-width: 1024px){
+        .container__titulo{
+            font-size: 60px;
+        }
+        .container--font{
+        font-size: 20px;
+        }
+        .container__button{
+        font-size: 20px;
+        width: 2000px;
+        }
+        .form__container{
+            width: 100%;
+            margin-left: 0vh;
+        }
+        /* FOOTER */
+        .footer__contacto--nav{
+            font-size: 21px;
+            margin-top: 2vh;
+            margin-left: 12vh;
+        }
+        .footer__contacto--parrafo{
+            font-size: 20px;
+            margin-left: 25vh;
+        }
+        .footerContacto__icon--media{
+            margin-left: 74vh;
+            margin-top: 5vh;
+        }
+        .footerContacto__icon--social{
+            width: 40px;
+        }
+        .footer__contacto--copyright{
+            font-size: 18px;
+            margin-left: 25vh;
+        }
+    }
