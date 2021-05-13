@@ -2,6 +2,10 @@
     body{
         overflow-x: hidden;
     }
+    .navigation{
+        position: sticky;
+        top: 0;
+    }
     /*body background*/
     #body-container{
         width: 100%;
