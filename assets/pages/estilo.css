@@ -2,9 +2,25 @@
     body{
         overflow-x: hidden;
     }
+    /*HEADER - NAVBAR*/
     .navigation{
         position: sticky;
         top: 0;
+    }
+    .navbar__hamburguer--color{
+        width: 100px;
+        background-color: rgba(255, 255, 0, 0.356);
+    }
+    .header__logo{
+        width: 80px;
+    }
+    .header {min-height: 10px;}
+    .header .navbar {background-color: transparent !important;}
+    .header__navbar{
+        font-family:'Montserrat', sans-serif;
+        color: white;
+        font-size: 20px;
+        text-shadow: 1px 1px 1px black;
     }
     /*body background*/
     #body-container{
@@ -28,18 +44,7 @@
     }
 
 /* HOME - MOBILE */
-    /*HEADER - NAVBAR*/
-    .header__logo{
-        width: 80px;
-    }
-    .header {min-height: 10px;}
-    .header .navbar {background-color: transparent !important;}
-    .header__navbar{
-        font-family:'Montserrat', sans-serif;
-        color: white;
-        font-size: 20px;
-        text-shadow: 1px 1px 1px black;
-    }
+    
     /*PREVIEW - PRODUCTS mobile*/
     .cloud-text {
         -webkit-background-clip: text;
@@ -115,7 +120,7 @@
         box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3);}
     .grid > article:hover {
         border: 2px solid #A5CF61;
-        box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.3);}
+        box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3)}
     .grid > article img {
         max-width: 100%; transition: 1s;}
     .grid .text {
@@ -479,135 +484,49 @@
 }
 
 /*PRODUCTOS mobile*/
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 200px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-    margin-top: 5vh;
+.productos__button--Ncarrito{
+    margin-left: 37vh;
+    box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.295);
+    margin-bottom: 2vh;
+    font-size: 15px;
+    background-color: #FF8921;
+    border-color: aliceblue;
 }
-.price {
-    color: grey;
-    font-size: 22px;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+.productos__carrito--notificacion{
+    width: 16px;
 }
-.card button {
-    border: none;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: #046865;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-}
-.card button:hover {
-    opacity: 0.7;
-}
-.productos__img{
-    height: 411px;
-}
-.productos__img2{
-    height: 441px;
+.productos__button--pointer{
+    margin-bottom: 2vh;
+    background-color: #FF8921;
+    border-color: aliceblue;
 }
 .productos__title{
-    font-size: 25px;
-    font-family: 'Poiret One', cursive;
-    color: #e53d00;
-}
-.productos__stock{
-    margin-top: 5vh;
-    font-weight: bold;
-    font-size: 28px;
-    font-family: 'Poiret One', cursive;
+    font-family: 'Cinzel Decorative', cursive;
     text-align: center;
-    color: #046865;
-}
-.productos__edition{
-    margin-top: 5vh;
-    font-weight: bold;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
     font-size: 35px;
-    font-family: 'Poiret One', cursive;
-    text-align: center;
-    color: #e53d00;
+    margin-right: 3vh;
+    margin-left: 3vh;
 }
 /* ------------------------ PRODUCTOS ---- TABLET -----------------------*/
 @media screen and (min-width:768px) and (max-width: 1024px) {
-    .card {
-        max-width: 300px;
-        margin-top: 5vh;
-        margin-right: 5vh;
-        margin: 5vh;
-    }
-    .price {
-        font-size: 22px;
-        font-size: 18px;
-    }
-    .card button {
-        padding: 12px;
-        width: 100%;
-        font-size: 18px;
-    }
-    .card button:hover {
-        opacity: 0.7;
-    }
-    .productos__img{
-        height: 450px;
-    }
-    .productos__img2{
-        height: 441px;
-    }
     .productos__title{
-        font-size: 25px;
+        font-size: 60px;
     }
-    .productos__stock{
-        margin-top: 5vh;
-        font-size: 28px;
-    }
-    .productos__edition{
-        margin-top: 5vh;
-        font-size: 35px;
+    .productos__button--Ncarrito{
+        margin-left: 62vh;
+        font-size: 15px;
     }
 }
 /* -- PRODUCTOS - DESKTOP -- */
 @media screen and (min-width: 1024px){
-    .card {
-        margin-top: 5vh;
-        margin-left: 26vh;
-    }
-    .price {
-        font-size: 22px;
+    .productos__button--Ncarrito{
+        margin-left: 130vh;
         font-size: 18px;
     }
-    .card button {
-        padding: 12px;
-        width: 100%;
-        font-size: 22px;
-    }
-    .card button:hover {
-        opacity: 0.7;
-    }
-    .productos__img{
-        height: 450px;
-    }
-    .productos__img2{
-        height: 441px;
-    }
     .productos__title{
-        font-size: 28px;
-    }
-    .productos__stock{
-        margin-top: 5vh;
-        text-align: center;
-        font-size: 35px;
-    }
-    .productos__edition{
-        margin-top: 5vh;
-        font-size: 40px;
+        font-size: 58px;
     }
 }
 
@@ -899,6 +818,9 @@
         width: 80%;
         margin-left: 3vh;
     }
+    .contacto__tarjetas{
+        width: 42px;
+    }
     /* FOOTER */
     .footer__contacto--nav{
         font-size: 17px;
@@ -948,6 +870,9 @@
             width: 100%;
             margin-left: 0vh;
         }
+        .contacto__tarjetas{
+            width: 42px;
+        } 
         /* FOOTER */
         .footer__contacto--nav{
             font-size: 20px;

@@ -23,7 +23,7 @@
                 <header class="header">
                 <nav class="navbar sticky-top navbar-light bg-light">
                     <a class="navbar-brand" href="/raiz/index.html"><img src="../img/logoALT-.png" class="header__logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler ; navbar__hamburguer--color" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -161,24 +161,23 @@
                                 <label for="validationDefault02">Fecha a realizar</label>
                                 <input class="form-control" type="date" value="08-19-2021" id="validationDefault02">
                             </div>
-                            <!--sabores-->
-                            <div class="col-md-6 mb-3">
-                                <label for="validationDefault02">Sabor a comprar</label>
-                                <input type="text" class="form-control" id="validationDefault02" placeholder="sabor/es preferido/s" value="">
-                            </div>
                             <!--hora de contacto-->
                             <div class="col-md-6 mb-3">
                             <label for="validationDefault02">Momento del día en el que este disponible para charlar
                             <div class="col-md-6 mb-3">
                                 <div class="custom-control custom-switch">
                                     <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                    <label class="custom-control-label" for="customSwitch1">A la mañana</label>
+                                    <label class="custom-control-label" for="customSwitch1">A la mañana
+                                        <img class="contacto__tarjetas" src="../img/am.png">
+                                    </label>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-3">
                                 <div class="custom-control custom-switch">
                                     <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                    <label class="custom-control-label" for="customSwitch2">A la tarde</label>
+                                    <label class="custom-control-label" for="customSwitch2">A la tarde
+                                        <img class="contacto__tarjetas" src="../img/pm.png">
+                                    </label>
                                 </div>
                             </div>
                             </label>
@@ -198,7 +197,7 @@
                 <div class="container">
                 <div class="form__container">
                 <form class="container--font">
-                    <h1 class="container__titulo--individual">Individual:</h1>
+                    <h1 class="container__titulo--individual">Compra Individual:</h1>
                     <div class="form-row">
                         
                     </div>
@@ -215,9 +214,9 @@
                         </div>
                         <!--En capital-->
                         <div class="col-md-3 mb-3">
-                            <label for="validationDefault04">Evento / Market</label>
+                            <label for="validationDefault04">Domicilio</label>
                             <select class="custom-select" id="validationDefault04">
-                                <option selected disabled value="">En C.A.B.A.</option>
+                                <option selected disabled value="">|En C.A.B.A.</option>
                                 <option>Agronomía</option> 
                                 <option>Almagro</option>
                                 <option>Balvanera</option>
@@ -270,9 +269,9 @@
                             </div>
                             <!--En provincia-->
                             <div class="col-md-3 mb-3">
-                                <label for="validationDefault04">Evento / Market</label>
+                                <label for="validationDefault04">Domicilio</label>
                                 <select class="custom-select" id="validationDefault04">
-                                    <option selected disabled value="">En Prov.B.S.A.S.</option>
+                                    <option selected disabled value="">|En Prov.B.S.A.S.</option>
                                     <option>Vicente Lopez</option>
                                     <option>San Isidro</option>
                                     <option>San Fernando</option>
@@ -287,10 +286,10 @@
                             <!--CÓDIGO POSTAL-->
                             <div class="col-md-3 mb-3">
                                 <label for="inputZip">C. P.</label>
-                                <input type="text" class="form-control" id="inputZip">
+                                <input type="text" class="form-control" placeholder="Código Postal" id="inputZip">
                             </div>
                             <!--Producto elejido-->
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-12 mb-3">
                                     <label for="exampleFormControlSelect2">Elija el producto que desea comprar</label>
                                     <select multiple class="form-control" id="exampleFormControlSelect2">
                                         <option>| PACK - Variedad de Sabores Frutales</option>
@@ -323,21 +322,27 @@
                                     </select>
                                 </div>
                             <!--Metodo de pago-->
-                            <div class="col-md-6 mb-3">
-                                <label for="validationDefault02">Método de pago:
+                            <div class="col-md-8 mb-3">
+                                <label for="validationDefault02">Método de pago:</label>
                                 <div class="col-md-6 mb-3">
                                     <div class="custom-control custom-switch">
                                         <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                        <label class="custom-control-label" for="customSwitch1">Debito</label>
+                                        <label class="custom-control-label" for="customSwitch1">Débito
+                                                <img class="contacto__tarjetas" src="../img/visa.png">
+                                                <img class="contacto__tarjetas" src="../img/maestro_debito.png">
+                                        </label>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
+                                <div class="col-md-8 mb-3">
                                     <div class="custom-control custom-switch">
                                         <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                                        <label class="custom-control-label" for="customSwitch2">Credito</label>
+                                        <label class="custom-control-label" for="customSwitch2">Crédito
+                                            <img class="contacto__tarjetas" src="../img/visa.png">
+                                            <img class="contacto__tarjetas" src="../img/maestro-credito.png">
+                                            <img class="contacto__tarjetas" src="../img/american-express_credito.png">
+                                        </label>
                                     </div>
                                 </div>
-                                </label>
                             </div>
                             <!--nombre-->
                             <div class="col-md-6 mb-3">
@@ -355,12 +360,12 @@
                                 <input type="text" class="form-control" id="validationDefault02" placeholder="tú número de tarjeta seleccionada..." value="" required>
                             </div>
                             <!--código de seguridad-->
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-3 mb-3">
                                 <label for="validationDefault02">Código de seguridad</label>
                                 <input type="text" class="form-control" id="validationDefault02" placeholder="CVC" value="" required>
                             </div>
                             <!--expiración de tarjeta-->
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-3 mb-3">
                                 <label for="validationDefault02">Expiración de tarjeta</label>
                                 <input type="text" class="form-control" id="validationDefault02" placeholder="MM/AA" value="" required>
                             </div>
