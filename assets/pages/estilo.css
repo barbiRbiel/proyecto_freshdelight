@@ -1,47 +1,22 @@
-/*general*/
-    body{
-        overflow-x: hidden;
-    }
+/*-------------------- GENERALES ------------------------*/
     /*HEADER - NAVBAR*/
-    .navigation{
-        position: sticky;
-        top: 0;
-    }
-    .navbar__hamburguer--color{
-        width: 100px;
-        background-color: rgba(255, 255, 0, 0.356);
-    }
-    .header__logo{
-        width: 90px;
-    }
-    .header {min-height: 10px;}
+    .navbar__hamburguer--color{width: 100px;background-color: #FF8921; border-color: 1px 1px 1px 1px white;}
+    .header__logo{width: 90px;}
     .header .navbar {background-color: transparent !important;}
     .header__navbar{
         font-family:'Montserrat', sans-serif;
         color: white;
         font-size: 20px;
-        text-shadow: 1px 1px 1px black;
-    }
+        text-shadow: 1px 1px 1px black;}
     /*body background*/
+    body{overflow-x: hidden;}
     #body-container{
         width: 100%;
         height: 100vh;
-        background: url(../img/background2.png) center center no-repeat;
+        background: url(../img/bg1.png) center center no-repeat;
         background-size: cover;
         overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    /* -- body background - DESKTOP -- */
-    @media screen and (min-width: 1024px){
-        #body-container{
-            width: 100%;
-            height: 100vh;
-            background: url(../img/background.png) center center no-repeat;
-            background-size: cover;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-    }
+        overflow-x: hidden;}
 
 /* HOME - MOBILE */
     /*PREVIEW - PRODUCTS mobile*/
@@ -126,16 +101,18 @@
         padding: 20px;
         text-align: center;}
     .grid .text h3 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         font-family: 'Montserrat', sans-serif;
         color: white;
-        font-weight: bold;
+        font-weight: bolder;
+        text-shadow: 1px 1px 2px black;
     }
     .grid .text p {
-        font-size: 0.9rem;
+        font-size: 1.0rem;
         font-family: 'Montserrat', sans-serif;
-        color: white;
-        text-shadow: 1px 1px 1px black;
+        color: #1D7151;
+        text-shadow: 1px 1px 2px white;
+        font-weight: bolder;
     }
     .grid .text p a {
         text-decoration: none;
@@ -156,26 +133,29 @@
     .testimonios__title{
         font-family: 'Cinzel Decorative', cursive;
         text-align: center;
-        margin-top: 11vh;
-        margin-bottom: 7vh;
+        margin-top: 12vh;
+        margin-bottom: 2vh;
         font-size: 40px;
         font-weight: bolder;
     }
     .testimonios__clientes{
-        width: 0px;
+        width: 260px;
     }
     .testimonios__nombre{
         font-family: 'Montserrat', sans-serif;
-        font-size: 17px;
-        text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.822);
-        color: #f8ed6d;
+        font-size: 14px;
+        margin-right: 1vh;
+        text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.822);
+        color: white;
+        background: #113A1A;
     }
     .testimonios__frase{
         font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
+        font-size: 12px;
+        margin-right: 2vh;
         text-shadow: 1px 1px 2px black;
         font-style: italic;
-        color:white;
+        color: #D3D930;
     }
     /* FOOTER */
     .footer__nav{
@@ -195,6 +175,10 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
         font-weight: bold;
+        
+    }
+    .footer__social--hover{
+        color: white;
     }
 /* ------------------------ HOME ---- TABLET -----------------------*/
 @media screen and (min-width:768px) and (max-width: 1024px) {
@@ -236,16 +220,21 @@
         margin-left: 2vh;
     }
     .testimonios__clientes{
-        width: 124px;
+        width: 500px;
     }
     .testimonios__nombre{
         font-size: 23px;
         margin-bottom: 2vh;
+        margin-right: 2vh;
+        margin-left: 2vh;
     }
     .testimonios__frase{
-        font-size: 17px;
-        margin-bottom: 3vh;
+        font-size: 20px;
+        margin-right: 5vh;
+        margin-bottom: 5vh;
+        margin-left: 5vh;
     }
+
 /* FOOTER */
     .footer__social{
         font-size: 18px;
@@ -259,11 +248,11 @@
 @media screen and (min-width:1024px) {
 /*HEADER - NAVBAR*/
         .header__logo{
-            width: 105px;
+            width: 115px;
             margin-left: 5vh;
         }
         .header__navbar{
-            padding-left: 12vh;
+            padding-left: 10vh;
             transition: 1s;
         }
         .header__navbar:hover{
@@ -297,8 +286,8 @@
             font-size: 22px;
             margin-top: 6vh;
             margin-bottom: 20vh;
-            margin-left: 40vh;
-            width: 400px;
+            margin-left: 30vh;
+            width: 550px;
         }
 /*testimonios*/
         .testimonios__title{
@@ -307,16 +296,21 @@
             font-size: 55px;
         }
         .testimonios__clientes{
-            width: 220px;
+            width: 800px;
             margin-top: 2vh;
+            margin-right: 5vh;
             margin-bottom: 3vh;
         }
         .testimonios__nombre{
             font-size: 30px;
+            margin-right: 7vh;
             margin-bottom: 5vh;
+            margin-left: 7vh;
         }
         .testimonios__frase{
+            text-align: center;
             font-size: 25px;
+            margin-right: 10vh;
             margin-bottom: 15vh;
         }
 /* FOOTER */
@@ -331,7 +325,7 @@
             font-size: 16px;
         }
 }
-/* ------------------------ HOME ---- DESKTOP -pantalla más grande-----------------------*/
+/* ------------------------ HOME ---- DESKTOP -más grande-----------------------*/
 @media screen and (min-width:1750px) {
     .header__logo{
         width: 105px;
@@ -349,6 +343,42 @@
         padding-left: 0vh;
         width: 500px;
     }
+    .testimonios__clientes{
+        width: 800px;
+        margin-top: 2vh;
+        margin-right: 5vh;
+        margin-bottom: 7vh;
+    }
+    .testimonios__nombre{
+        font-size: 30px;
+        margin-right: 25vh;
+        margin-bottom: 5vh;
+        margin-left: 25vh;
+    }
+    .testimonios__frase{
+        text-align: center;
+        font-size: 25px;
+        margin-right: 10vh;
+        margin-bottom: 25vh;
+    }
+}
+/* ------------------------ HOME ---- DESKTOP -más grande-----------------------*/
+@media screen and (min-width:1850px) {
+    .header__logo{
+        width: 105px;
+        margin-left: 2vh;
+    }
+    .header__navbar{
+        padding-left: 18vh;
+        transition: 1s;
+    }
+    .preview__btn{
+        font-size: 22px;
+        margin-top: 6vh;
+        margin-bottom: 20vh;
+        margin-left: 30vh;
+        width: 500px;
+    }
 }
 
 /* NOSOTROS - mobile*/
@@ -361,91 +391,137 @@
         margin-right: 2vh;
         margin-left: 2vh;
     }
+    .nosotros__container{
+        position: relative;
+    }
+    .nosotros__block{
+        position: absolute;
+        bottom: 3vh;
+        margin-right: 8vh;
+        margin-left: 8vh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .nosotros__parrafo{
+        margin-top: 0vh;
         font-family: 'Montserrat', sans-serif;
-        color: white;
-        text-align: justify;
-        margin-right: 3vh;
-        margin-left: 3vh;
+        color:rgb(1, 63, 1);
+        font-weight: bold;
+        text-align: center;
         font-size: 15px;
-        text-shadow: 5px 1px 3px black;
-        margin-top: 2vh;
+        text-shadow: 1px 1px 2px white;
+        background: rgba(255, 255, 255, 0.089);
+    }
+    .nosotros__parrafo:hover{
+        font-size: 16px;
     }
     .nosotros__resaltado{
-        color: #f8ed6d;
+        color: #eed816;
+        text-shadow: 1px 1px 2px black;
     }
     .culinario__title{
         font-family: 'Cinzel Decorative', cursive;
         text-align: center;
         margin-top: 10vh;
         margin-bottom: 5vh;
-        font-size: 50px;
+        font-size: 40px;
         margin-right: 2vh;
         margin-left: 2vh;
     }
-    .culinarios__parrafo{
-        margin-top: 2vh;
+    .culinario__container{
+        position: relative;
+        margin-bottom: 2px;
+    }
+    .culinario__block{
+        position: absolute;
+        bottom: 1px;
+        top: 20px;
+    }
+    .culinario__parrafo{
         font-family: 'Montserrat', sans-serif;
         color: white;
         text-align: center;
-        margin-right: 3vh;
-        margin-left: 2vh;
-        font-size: 15px;
+        font-size: 14px;
+        font-weight: bold;
         text-shadow: 1px 1px 1px black;
     }
 /* ------------------------ NOSOTROS ---- TABLET -----------------------*/
 @media screen and (min-width:768px) and (max-width: 1024px) {
-        .nosotros__title{
-            margin-top: 5vh;
-            margin-bottom: 2vh;
-            font-size: 28px;
-        }
-        .nosotros__parrafo{
-            margin-top: 2vh;
-            margin-right: 4vh;
-            margin-left: 2vh;
-            font-size: 18px;
-        }
-        .culinarios__title{
-            margin-top: 5vh;
-            margin-bottom: 2vh;
-            font-size: 28px;
-        }
-        .culinarios__parrafo{
-            margin-top: 2vh;
-            margin-right: 4vh;
-            margin-bottom: 2vh;
-            margin-left: 2vh;
-            font-size: 18px;
-            text-align: justify;
-        }
+    .nosotros__title{
+        margin-bottom: 0vh;
+        font-size: 50px;
+    }
+    .nosotros__block{
+        position: absolute;
+        margin-right: 22vh;
+        margin-bottom: 18vh;
+        margin-left: 22vh;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nosotros__parrafo{
+        font-size: 17px;
+        background: rgba(255, 255, 255, 0);
+    }
+    .nosotros__parrafo:hover{
+        font-size: 17px;
+    }
+    .nosotros__resaltado{
+        color: #eed816;
+        text-shadow: 1px 1px 2px black;
+    }
+    .culinario__title{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-size: 45px;
+    }
+    .culinario__container{
+        position: relative;
+        margin-bottom: 2px;
+    }
+    .culinario__block{
+        position: absolute;
+        top: 13vh;
+        right: 2vh;
+        bottom: 1px;
+        left: 2vh;
+    }
+    .culinario__parrafo{font-size: 18px;}
 }
 /* -- NOSOTROS - DESKTOP -- */
 @media screen and (min-width: 1024px){
-        .nosotros__title{
-            margin-top: 5vh;
-            margin-bottom: 2vh;
-            font-size: 45px;
-        }
-        .nosotros__parrafo{
-            margin-top: 2vh;
-            margin-right: 6vh;
-            margin-left: 3vh;
-            font-size: 23px;
-        }
-        .culinarios__title{
-            margin-top: 5vh;
-            margin-bottom: 2vh;
-            font-size: 35px;
-        }
-        .culinarios__parrafo{
-            margin-top: 2vh;
-            margin-right: 6vh;
-            margin-bottom: 8vh;
-            margin-left: 3vh;
-            font-size: 23px;
-            text-align: justify;
-        }
+    .nosotros__title{font-size: 60px; margin-bottom: 0vh;}
+    .nosotros__block{
+        position: absolute;
+        margin-right: 48vh;
+        margin-bottom: 54vh;
+        margin-left: 48vh;
+    }
+    .nosotros__parrafo{
+        font-size: 25px;
+        background: rgba(255, 255, 255, 0);
+    }
+    .nosotros__parrafo:hover{font-size: 25px;}
+    .nosotros__resaltado{
+        color: #eed816;
+        text-shadow: 1px 1px 2px black;
+    }
+    .culinario__title{
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-size: 50px;
+    }
+    .culinario__container{
+        margin-bottom: 2px;
+    }
+    .culinario__block{
+        position: absolute;
+        top: 33vh;
+        right: 16vh;
+        bottom: 1px;
+        left: 16vh;
+    }
+    .culinario__parrafo{font-size: 25px;}
 }
 
 /*PRODUCTOS mobile*/
@@ -480,11 +556,11 @@
         font-size: 60px;
     }
     .productos__button--Ncarrito{
-        margin-left: 62vh;
+        margin-left: 63vh;
         font-size: 15px;
     }
 }
-/* -- PRODUCTOS - DESKTOP -- */
+/* ------------ PRODUCTOS - DESKTOP ------------------ */
 @media screen and (min-width: 1024px){
     .productos__button--Ncarrito{
         margin-left: 130vh;
@@ -492,6 +568,13 @@
     }
     .productos__title{
         font-size: 58px;
+    }
+}
+/* ------------------------ HOME ---- DESKTOP -más grande-----------------------*/
+@media screen and (min-width:1750px) {
+    .productos__button--Ncarrito{
+        margin-left: 186vh;
+        font-size: 18px;
     }
 }
 
@@ -509,8 +592,8 @@
         font-family: 'Poiret One', cursive;
         font-size: 14px;
         font-weight: bold;
-        color: white;
-        text-shadow: 1px 1px 6px black;
+        color: green;
+        text-shadow: 1px 1px 1px white;
     }
     .eventos__container {
         display: flex;
@@ -544,6 +627,7 @@
     .box:hover > img {
         width: 100%;
         height: 100%;
+        
     }
     .eventos__grid {
         display: grid;
@@ -565,21 +649,21 @@
         text-align: center;}
     .eventos__grid .eventos__text h3 {
         font-family: 'Poiret One', cursive;
-        color: white;
+        color: green;
         font-size: 20px;
         margin-right: 5vh;
         margin-left: 2vh;
         margin-top: 3vh;
         margin-bottom: 5vh;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 1px white;
     }
     .eventos__grid .eventos__text h4{
         font-family: 'Montserrat', sans-serif;
-        color: white;
+        color: green;
         font-size: 15px;
         margin-right: 5vh;
         margin-left: 2vh;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 1px white;
     }
     .eventos__grid .eventos__button{
         margin-bottom: 10vh;
@@ -766,58 +850,53 @@
         margin-left: 2vh;
     }
     .container--font{
-    color:white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    text-shadow: 1px 1px 1px black;
+        color:green;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px white;
     }
     .container__button{
-    font-size: 12px;
-    width: 400px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 400px;
+        margin-bottom: 5vh;
     }
     .container__titulo--individual{
         margin-top: 5vh;
         margin-bottom: 3vh;
+        font-size: 35px;
+        text-shadow: 1px 1px 2px white;
     }
     .form__container{
-        width: 80%;
+        width: 90%;
         margin-left: 3vh;
+    }
+    .contacto__icon{
+        width: 21px;
     }
     .contacto__tarjetas{
         width: 42px;
     }
-    /* FOOTER */
-    .footer__contacto--nav{
-        font-size: 17px;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        text-decoration: none;
-        text-shadow: 1px 1px 1px black;
-        margin-right: 7vh;
-        margin-left: 1vh;
+    input{
+        background: #ecf0f3;
+        padding: 10px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 14px;
+        border-radius: 58px;
+
+        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
     }
-    .footer__contacto--parrafo{
-        color: white;
-        font-size: 12px;
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        margin-right: 8vh;
-        margin-left: 1vh;
-        text-shadow: 1px 1px 1px black;
-    }
-    .footerContacto__icon--media{
-        margin-left: 18vh;
-    }
-    .footer__contacto--copyright{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-        margin-right: 7vh;
-        margin-left: 1vh;
+    select{
+        background: #ecf0f3;
+        padding: 10px;
+        padding-left: 20px;
+        height: 50px;
+        font-size: 10px;
+        border-radius: 58px;
+
+        box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
     }
     /* -- CONTACTO - TABLET -- */
     @media screen and (min-width:768px) and (max-width: 1024px) {
@@ -825,35 +904,15 @@
             font-size: 55px;
         }
         .container--font{
-        font-size: 19px;
+            font-size: 19px;
         }
         .container__button{
-        font-size: 20px;
-        width: 768px;
+            font-size: 20px;
+            width: 1000px;
         }
         .form__container{
             width: 100%;
             margin-left: 0vh;
-        }
-        .contacto__tarjetas{
-            width: 42px;
-        } 
-        /* FOOTER */
-        .footer__contacto--nav{
-            font-size: 20px;
-            margin-left: 1vh;
-        }
-        .footer__contacto--parrafo{
-            font-size: 18px;
-            margin-left: 8vh;
-        }
-        .footerContacto__icon--media{
-            margin-left: 31vh;
-            margin-top: 5vh;
-        }
-        .footer__contacto--copyright{
-            font-size: 18px;
-            margin-left: 10vh;
         }
     }
     /* -- CONTACTO - DESKTOP -- */
@@ -862,35 +921,14 @@
             font-size: 60px;
         }
         .container--font{
-        font-size: 20px;
+            font-size: 20px;
         }
         .container__button{
-        font-size: 20px;
-        width: 2000px;
+            font-size: 20px;
+            width: 2000px;
         }
         .form__container{
             width: 100%;
             margin-left: 0vh;
-        }
-        /* FOOTER */
-        .footer__contacto--nav{
-            font-size: 21px;
-            margin-top: 2vh;
-            margin-left: 12vh;
-        }
-        .footer__contacto--parrafo{
-            font-size: 20px;
-            margin-left: 25vh;
-        }
-        .footerContacto__icon--media{
-            margin-left: 74vh;
-            margin-top: 5vh;
-        }
-        .footerContacto__icon--social{
-            width: 40px;
-        }
-        .footer__contacto--copyright{
-            font-size: 18px;
-            margin-left: 25vh;
         }
     }
