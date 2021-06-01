@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&family=Montserrat:wght@200&family=Poiret+One&display=swap" rel="stylesheet"> 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Mi CSS -->
     <link rel="stylesheet" href="estilo.css">
     <title> Fresh Delight - Nosotros</title>
@@ -51,29 +53,42 @@
             </div>
         </div>
 
-        <!--SOBRE NOSOTROS-->
+        <!--TIMELINE-->
         <div class="row">
             <div class="col-lg-12 col-xs-12">
-                <h1 class="cloud-text ; cloud-title ; nosotros__title">NUESTRA &nbsp; HISTORIA</h1>
-                    <div class="nosotros__container">
-                        <img src="../img/nosotros.png" alt="Nosotros" style="width: 100%;">
-                        <div class="nosotros__block">
-                            <p class="nosotros__parrafo">Con <strong class="nosotros__resaltado">Fresh Delight, exprime más el momento.</strong> Nuestro <strong class="nosotros__resaltado">proceso de prensado en frío</strong> captura todo el sabor de las frutas y verduras frescas. <strong class="nosotros__resaltado">Deliciosamente puro. </strong>Súper <strong class="nosotros__resaltado">nutritivo.</strong> Conservada de forma inteligente, para ayudarte a seguir adelante con solo una gota más de alegría.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="fade-in-up ; main-timeline">
+                                <div class="timeline">
+                                    <a href="" class="timeline-content">
+                                        <div class="timeline-year">
+                                            <span></span>
+                                        </div>
+                                        <h3 class="title">Nosotros</h3>
+                                        <p class="description">Con <strong>Fresh Delight, exprime más el momento.<br></strong> Nuestro <strong>proceso de prensado en frío</strong> captura todo el sabor de las frutas y verduras frescas. <strong>Deliciosamente puro. </strong>Súper <strong>nutritivo.</strong> Conservada de forma inteligente, para ayudarte a seguir adelante con solo una gota más de alegría.</p>
+                                    </a>
+                                </div>
+                                <div class="timeline">
+                                    <a href="" class="timeline-content">
+                                        <div class="timeline-year">
+                                            <span><img class="timeline__logo" src="../img/logoALT-.png"></span>
+                                        </div>
+                                        <h3 class="title">Amamos lo que hacemos</h3>
+                                        <p class="description">Nuestro equipo se basa en más de <strong>30 años de experiencia culinaria</strong> combinada para determinar cómo se pueden<strong> combinar creativamente las cualidades naturales de cada fruta y verdura fresca </strong> para obtener un sabor óptimo.</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
 
-        <!--CULINARIO-->
+        <!--imagen-->
         <div class="row">
             <div class="col-lg-12 col-xs-12">
-                <h1 class="cloud-text ; cloud-title ; culinario__title">INSTINTOS CULINARIOS</h1>
-                    <div class="culinario__container">
-                        <img src="../img/culinario.png" alt="Culinario" style="width: 100%;">
-                        <div class="culinario__block">
-                            <p class="culinario__parrafo"><strong class="culinario__resaltado">Nuestro equipo se basa en más de <strong class="nosotros__resaltado">30 años de experiencia culinaria</strong> combinada para determinar cómo se pueden<strong class="nosotros__resaltado"> combinar creativamente las cualidades naturales de cada fruta y verdura fresca </strong> para obtener un sabor óptimo.</p>
-                        </div>
-                    </div>
+                <img src="../img/culinario.png" alt="Culinario" style="width: 100%;">
             </div>
         </div>
 
@@ -94,23 +109,23 @@
                         <div class="col-md-6 col-lg-7 text-center text-md-right">
                             <!-- Amazon -->
                             <a href="https://www.amazon.com/" class="fb-ic">
-                            <i class="fab fa-facebook-f white-text mr-4"><img src="../img/amazon.png" style="width: 35px;"></i>
+                            <i class="fab fa-facebook-f white-text mr-4"><img src="../img/amazon.png"  class="footer__icon"></i>
                             </a>
                             <!-- Linkedin -->
                             <a href="https://www.linkedin.com/" class="tw-ic">
-                            <i class="fab fa-twitter white-text mr-4"><img src="../img/linkedin.png" style="width: 35px;"></i>
+                            <i class="fab fa-twitter white-text mr-4"><img src="../img/linkedin.png"  class="footer__icon"></i>
                             </a>
                             <!-- Instagram -->
                             <a href="https://www.instagram.com/"  class="gplus-ic ; ">
-                                <i class="fab fa-google-plus-g white-text mr-4"><img src="../img/instagram.png" style="width: 35px;"></i>
+                                <i class="fab fa-google-plus-g white-text mr-4"><img src="../img/instagram.png"  class="footer__icon"></i>
                             </a>
                             <!--Pinterest -->
                             <a href="phttps://www.pinterest.co.uk/"  class="li-ic">
-                            <i class="fab fa-linkedin-in white-text mr-4"><img src="../img/pinterest.png" style="width: 35px;"></i>
+                            <i class="fab fa-linkedin-in white-text mr-4"><img src="../img/pinterest.png"  class="footer__icon"></i>
                             </a>
                             <!-- Facebook -->
                             <a href="https://www.facebook.com/"  class="ins-ic">
-                            <i class="fab fa-instagram white-text"><img src="../img/facebook.png" style="width: 35px;"></i>
+                            <i class="fab fa-instagram white-text"><img src="../img/facebook.png"  class="footer__icon"></i>
                             </a>
                         </div>
                         <!-- Grid column -->
@@ -177,7 +192,7 @@
                     <!-- Footer Links -->
                     <!-- Copyright -->
                     <a href="https://www.linkedin.com/in/barbara-bielicki-/">
-                        <div class="footer-copyright text-center py-3 ; footer__copyright">© 2020 Copyright: Bárbara R. Bielicki</div>
+                        <div class="footer-copyright text-center py-3 ; footer__copyright">© 2021 Copyright: Bárbara R. Bielicki</div>
                     </a>
                     <!-- Copyright -->
                 </footer>
